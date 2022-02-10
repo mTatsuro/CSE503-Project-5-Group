@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list_style-type: none;
+}
+
+body {
+  font: Verdana, sans-serif;
+}
+
+h1{
+  margin-bottom: 0px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  empty-cells: hide;
+}
+
+td, th{
+  border: solid;
+  border-color: #cccccc;
+}
+
+.btn{
+  background-color: #cccccc;
+  border: none;
+  color: black;
+  text-align: center;
+  margin: 2px 1px;
+  cursor: pointer;
+}
+
+.event_btn {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: red;
+}
+
+.event_delete_btn{
+  background-color: #cccccc;
+  border: none;
+  color: black;
+  text-align: center;
+  margin: 2px 1px;
+  cursor: pointer;
+}
+
+.event_popup{
+  display: none;
+  background-color: white;
+  border: 3px solid #cccccc;
+  position: absolute;
+  opacity: 1.0;
+  padding: 3px 3px;
+}
+
+.log_in{
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.log_in .log_in_btn{
+  border: none;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+.log_out{
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.log_out .log_out_btn{
+  border: none;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+.month{
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.month .prev_btn{
+  float: left;
+  margin-top: 15px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.month .next_btn{
+  float: right;
+  margin-top: 15px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.weekdays{
+  margin: 0;
+  padding: 10px 0;
+  background-color: #cccccc;
+}
+
+.weekdays th{
+  width: 13%;
+  color: white;
+}
+
+.days{
+  padding: 10px 0;
+  background-color: white;
+  margin: 0;
+}
+
+.days td{
+  width: 13%;
+  padding: 10px;
+}
+
+.register{
+  margin-top: 30px;
+}
+
+.edit_form_popup{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #cccccc;
+  z-index: 9;
+}
+
+.dot{
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.tag_chooser{
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.shared_message{
+  color: red;
+}
+
+.today{
+  background-color: #cccccc;
+}

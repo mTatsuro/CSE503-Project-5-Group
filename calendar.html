@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Calendar</title>
+  <link rel="stylesheet" type="text/css" href="calendar.css" />
+</head>
+<body>
+
+  <div class="log_in">
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="login_btn" class="log_in_btn">Log In</button>
+  </div>
+
+  <div class="log_out">
+    <button id="logout_btn" class="log_out_btn">Log out</button>
+  </div>
+
+  <h1>Calendar</h1>
+
+  <form id="select_tag" class="tag_chooser">
+    Choose event tags to display:
+    <input type="checkbox" class="chosen_tag" value="Red" checked>Red
+    <input type="checkbox" class="chosen_tag" value="Green" checked>Green
+    <input type="checkbox" class="chosen_tag" value="Yellow" checked>Yellow
+    <input type="checkbox" class="chosen_tag" value="Blue" checked>Blue
+    <input type="checkbox" class="chosen_tag" value="Purple" checked>Purple
+    <input type="checkbox" class="chosen_tag" value="White" checked>White
+  </form>
+
+  <div class="month">
+    <button id="prev_month_btn" class="prev_btn">Previous</button>
+    <button id="next_month_btn" class="next_btn">Next</button>
+    <span id="month_name">August</span><br>
+    <span id="year_name">2021</span>
+  </div>
+
+  <table>
+    <tr class="weekdays">
+      <th>Sunday</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+    </tr>
+    <tr class="days">
+      <td>26</td>
+      <td>27</td>
+      <td>28</td>
+      <td>29</td>
+      <td>30</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr class="days">
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+    <tr class="days">
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+      <td>16</td>
+    </tr>
+    <tr class="days">
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td>20</td>
+      <td>21</td>
+      <td>22</td>
+      <td>23</td>
+    </tr>
+    <tr class="days">
+      <td>24</td>
+      <td>25</td>
+      <td>26</td>
+      <td>27</td>
+      <td>28</td>
+      <td>29</td>
+      <td>30</td>
+    </tr>
+    <tr class="days">
+      <td>31</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+  </table>
+
+  <div class="register">
+    You can register here.<br>
+    <input type="text" id="new_username" placeholder="Username" />
+    <input type="password" id="new_password" placeholder="Password" />
+    <button id="register_btn" class="btn">Register</button>
+  </div>
+
+  <div class="event">
+    Create a new event here.<br>
+    <input type="text" id="event_title" placeholder="Event Title">
+    <input type="time" id="event_time">
+    <input type="date" id="event_date">
+    Color tag:
+    <select id="tag">
+      <option value="Red">Red</option>
+      <option value="Green">Green</option>
+      <option value="Yellow">Yellow</option>
+      <option value="Blue">Blue</option>
+      <option value="Purple">Purple</option>
+      <option value="White" selected>White</option>
+    </select><br>
+    Share the event with another user:
+    <input type="text" id="event_share" placeholder="Username to share with">
+    <button id="event_create_btn" class="btn">Create</button>
+  </div>
+
+  <div id="edit_form" class="edit_form_popup">
+    Edit<br>
+    <input type="hidden" id="edit_id">
+    <input type="text" id="edit_title">
+    <input type="time" id="edit_time">
+    <input type="date" id="edit_date">
+    <select id="edit_tag">
+      <option value="Red">Red</option>
+      <option value="Green">Green</option>
+      <option value="Yellow">Yellow</option>
+      <option value="Blue">Blue</option>
+      <option value="Purple">Purple</option>
+      <option value="White">White</option>
+    </select>
+    <button id="save_edited_btn" class="btn">Save</button>
+    <button id="close_editor_btn" class="btn">Close</button>
+  </div>
+
+  <script src="ajax.js"></script> <!-- load the JavaScript file-->
+  <script src="calendar_display.js"></script>
+
+</body>
