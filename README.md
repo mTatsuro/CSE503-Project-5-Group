@@ -1,4 +1,4 @@
-# CSE330
+# Calendar Website
 
 A website calendar that allows users to add and remove events dynamically.
 Used JavaScript to process user interactions at the web browser, without ever refreshing the browser after the initial web page load. The application utilizes AJAX to run server-side scripts that query the database to save and retrieve information, including user accounts and events.
